@@ -160,11 +160,11 @@
 // For ESP32 Dev board (only tested with ILI9341 display)
 // The hardware SPI can be mapped to any pins
 
-//#define TFT_MOSI 15
-//#define TFT_SCLK 13
-//#define TFT_CS    5  // Chip select control pin
-//#define TFT_DC   23  // Data Command control pin
-//#define TFT_RST  18  // Reset pin (could connect to RST pin)
+#define TFT_MOSI 15
+#define TFT_SCLK 13
+#define TFT_CS    5  // Chip select control pin
+#define TFT_DC   23  // Data Command control pin
+#define TFT_RST  18  // Reset pin (could connect to RST pin)
 
 // ##################################################################################
 //
