@@ -157,9 +157,15 @@
 //#include <User_Setups/Dustin_ILI9341_ESP32.h>    // Setup file for Dustin Watts PCB with ILI9341
 //#include <User_Setups/ILI9225.h>
 
+#if M5STICK
+#if PLUS
+#include <User_Setups/Setup_M5StickCPlus.h>
+#else
+#include <User_Setups/Setup_M5StickC.h>
+#endif
+#endif
+
 #endif // USER_SETUP_LOADED
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
