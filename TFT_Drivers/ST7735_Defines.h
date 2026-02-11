@@ -42,7 +42,11 @@
   #define CGRAM_OFFSET
  
 #elif defined (ST7735_GREENTAB160x80)
-  #define TAB_COLOUR INITR_GREENTAB160x80
+  #if defined(INITR_GREENTAB160x80)
+    #define TAB_COLOUR INITR_GREENTAB160x80
+  #else
+    #define TAB_COLOUR INITR_REDTAB160x80
+  #endif
   #define CGRAM_OFFSET
 
 #elif defined (ST7735_ROBOTLCD)
